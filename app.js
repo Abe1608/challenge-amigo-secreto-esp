@@ -8,7 +8,6 @@ function agregarAmigo () {
     // ocultar el resultado del sorteo
     let resultadoSorteo = document.getElementById("resultado");
     resultadoSorteo.innerHTML = ""; // Limpiar resultados anteriores
-    resultadoSorteo.style.display = "none"; // Ocultar el resultado del sorteo
 
     // Validación para evitar espacios en blanco
     if (nombreAmigo === "") {
@@ -20,8 +19,6 @@ function agregarAmigo () {
 
 
             let listado = document.getElementById("listaAmigos"); 
-            listado.style.display = "block"; // Mostrar la lista de amigos
-
             listado.innerHTML = ""; // Limpiar la lista antes de un nuevo nombre 
 
             // Utilizaremos un bucle for para recorrer la lista de amigos 
@@ -54,12 +51,12 @@ function sortearAmigo() {
 
     let amigoGanador = document.getElementById("resultado");
     amigoGanador.innerHTML = ""; // Limpiar resultados anteriores
-    amigoGanador.style.display = "block"; // Mostrar el resultado del sorteo
+    
     let ganador = document.createElement("li");
 
     // ocultaremos la lista de amigos
     let listaAmigos = document.getElementById("listaAmigos");
-    listaAmigos.style.display = "none"; // Ocultar la lista de amigos
+    listaAmigos.innerHTML = "";// Limpiar la lista de amigos
 
     ganador.textContent = `Tu amigo secreto sorteado es: ${amigoSecreto}`;
 
