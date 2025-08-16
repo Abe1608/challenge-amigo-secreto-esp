@@ -36,7 +36,7 @@ Haz un fork, crea tu rama y envía tu pull request.
 
 1. Ingresa los nombres de los participantes.
 2. Haz clic en “Sortear”.
-3. mostrara en pantalla quien es el amigo secreto escogido.
+3. Mostrara en pantalla quien es el amigo secreto escogido.
 
 ## 📄 Licencia
 Actualmente este proyecto no posee una licencia definida.
