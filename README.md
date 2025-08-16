@@ -4,10 +4,10 @@
 
 ## ¿Qué hace esta app?
 
-- ✍️ Registra participantes para tu sorteo.
-- 🔀 Realiza el emparejamiento secreto entre ellos.
-- 📩 Envía los resultados privados a cada persona.
-- 🖥️ Interfaz amigable y fácil de usar.
+- Registra participantes para tu sorteo.
+- Realiza el emparejamiento secreto entre ellos.
+- Envía los resultados privados a cada persona.
+- Interfaz amigable y fácil de usar.
 
 
 ##  Instalación rápida
@@ -38,5 +38,5 @@ Haz un fork, crea tu rama y envía tu pull request.
 2. Haz clic en “Sortear”.
 3. Mostrara en pantalla quien es el amigo secreto escogido.
 
-## 📄 Licencia
+## Licencia
 Actualmente este proyecto no posee una licencia definida.
