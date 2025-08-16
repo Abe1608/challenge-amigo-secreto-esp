@@ -4,7 +4,12 @@ let amigos = [];
 function agregarAmigo () {
 
     let nombreAmigo = document.getElementById("amigo").value.trim();
-    
+       
+    // ocultar el resultado del sorteo
+    let resultadoSorteo = document.getElementById("resultado");
+    resultadoSorteo.innerHTML = ""; // Limpiar resultados anteriores
+    resultadoSorteo.style.display = "none"; // Ocultar el resultado del sorteo
+
     // Validación para evitar espacios en blanco
     if (nombreAmigo === "") {
                 alert("Por favor, inserte un nombre.");
@@ -49,6 +54,7 @@ function sortearAmigo() {
 
     let amigoGanador = document.getElementById("resultado");
     amigoGanador.innerHTML = ""; // Limpiar resultados anteriores
+    amigoGanador.style.display = "block"; // Mostrar el resultado del sorteo
     let ganador = document.createElement("li");
 
     // ocultaremos la lista de amigos
