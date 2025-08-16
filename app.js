@@ -15,6 +15,7 @@ function agregarAmigo () {
 
 
             let listado = document.getElementById("listaAmigos"); 
+            listado.style.display = "block"; // Mostrar la lista de amigos
 
             listado.innerHTML = ""; // Limpiar la lista antes de un nuevo nombre 
 
@@ -37,16 +38,27 @@ function sortearAmigo() {
     if (amigos.length < 2) {
         alert("Necesitas al menos dos amigos para realizar el sorteo.");
         return;
-    }       
+    }
 
     // aquí va ir valor aleatorio para buscar el amigo secreto
     let amigoAleatorio = amigos[Math.floor(Math.random() * amigos.length)];
     let amigoSecreto = [amigoAleatorio];
 
+    // Aquí vamos a eliminar el amigo secreto de la lista para que no se repita
+    amigos = amigos.filter(amigo => amigo !== amigoAleatorio);          
+
     let amigoGanador = document.getElementById("resultado");
     amigoGanador.innerHTML = ""; // Limpiar resultados anteriores
     let ganador = document.createElement("li");
-    ganador.textContent = `Tuamigo secreto sorteado es: ${amigoSecreto}`;
+
+    // ocultaremos la lista de amigos
+    let listaAmigos = document.getElementById("listaAmigos");
+    listaAmigos.style.display = "none"; // Ocultar la lista de amigos
+
+    ganador.textContent = `Tu amigo secreto sorteado es: ${amigoSecreto}`;
+
+    //limpiaremos el array para un nuevo sorteo
+    amigos = [] ;                            
 
     amigoGanador.appendChild(ganador);
 
